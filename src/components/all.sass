@@ -1,5 +1,68 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+/* SpaceMono regular */
+
+@font-face
+  font-family: 'Space Mono'
+  src: url("../../static/fonts/SpaceMono-Regular.eot")
+  src: url("../../static/fonts/SpaceMono-Regular.eot?#iefix") format('embedded-opentype'), url("../../static/fonts/SpaceMono-Regular.woff2") format('woff2'), url("../../static/fonts/SpaceMono-Regular.woff") format('woff'), url("../../static/fonts/SpaceMono-Regular.ttf") format('truetype')
+  font-weight: 400
+  font-style: normal
+
+/* SpaceMono italic */
+
+@font-face
+  font-family: 'Space Mono'
+  src: url('../../static/fonts/SpaceMono-Italic.eot')
+  src: url('../../static/fonts/SpaceMono-Italic.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/SpaceMono-Italic.woff2') format('woff2'), url('../../static/fonts/SpaceMono-Italic.woff') format('woff'), url('../../static/fonts/SpaceMono-Italic.ttf') format('truetype')
+  font-weight: 400
+  font-style: italic
+
+/* SpaceMono bold */
+
+@font-face
+  font-family: 'Space Mono'
+  src: url('../../static/fonts/SpaceMono-Bold.eot')
+  src: url('../../static/fonts/SpaceMono-Bold.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/SpaceMono-Bold.woff2') format('woff2'), url('../../static/fonts/SpaceMono-Bold.woff') format('woff'), url('../../static/fonts/SpaceMono-Bold.ttf') format('truetype')
+  font-weight: 700
+  font-style: normal
+
+/* Brandon Grotesque regular */
+
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url("../../static/fonts/BrandonGrotesque-Regular.eot")
+  src: url("../../static/fonts/BrandonGrotesque-Regular.eot?#iefix") format('embedded-opentype'), url("../../static/fonts/BrandonGrotesque-Regular.woff2") format('woff2'), url("../../static/fonts/BrandonGrotesque-Regular.woff") format('woff'), url("../../static/fonts/BrandonGrotesque-Regular.ttf") format('truetype')
+  font-weight: 400
+  font-style: normal
+
+/* Brandon Grotesque italic */
+
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../../static/fonts/BrandonGrotesque-RegularItalic.eot')
+  src: url('../../static/fonts/BrandonGrotesque-RegularItalic.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/BrandonGrotesque-RegularItalic.woff2') format('woff2'), url('../../static/fonts/BrandonGrotesque-RegularItalic.woff') format('woff'), url('../../static/fonts/BrandonGrotesque-RegularItalic.ttf') format('truetype')
+  font-weight: 400
+  font-style: italic
+
+/* Brandon Grotesque bold */
+
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../../static/fonts/BrandonGrotesque-Bold.eot')
+  src: url('../../static/fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/BrandonGrotesque-Bold.woff2') format('woff2'), url('../../static/fonts/BrandonGrotesque-Bold.woff') format('woff'), url('../../static/fonts/BrandonGrotesque-Bold.ttf') format('truetype')
+  font-weight: 700
+  font-style: normal
+
+/* Brandon Grotesque Black */
+
+@font-face
+  font-family: 'Brandon Grotesque'
+  src: url('../../static/fonts/BrandonGrotesque-Black.eot')
+  src: url('../../static/fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'), url('../../static/fonts/BrandonGrotesque-Black.woff2') format('woff2'), url('../../static/fonts/BrandonGrotesque-Black.woff') format('woff'), url('../../static/fonts/BrandonGrotesque-Black.ttf') format('truetype')
+  font-weight: 900
+  font-style: normal
+
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -8,11 +71,47 @@ $kaldi-red-invert: #fff
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
+$body-family: 'Roboto', sans-serif
 $black: #2b2523
 
-.navbar .navbar-menu
-  box-shadow:none !important
+// navbar
 
+.navbar .navbar-menu
+  box-shadow: none !important
+
+.navbar-brand a.logo
+  display: inline-block
+  cursor: pointer
+  font-family: 'Brandon Grotesque'
+  text-transform: uppercase
+  letter-spacing: 2px
+  font-size: 22px
+  font-weight: 900
+  color: black
+
+.logo
+  // color: #4a4a4a
+  line-height: 1.5
+  padding: 0.7rem 0
+  position: relative
+
+.lite
+  opacity: 0.3
+
+nav .container
+  max-width: 1200px;
+  margin: 0 auto;
+  display: table;
+  width: 100%;
+  padding: 0 50px;  
+
+nav .container a
+    transition: 0.3s all 0s ease
+    &:hover
+      opacity: 0.7;
+  
+
+//
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -43,30 +142,30 @@ $black: #2b2523
   align-items: center
 
 .full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
 
 .btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #CC3700
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  font-size: 1rem
+  line-height: 1.25
+  background-color: #fff
+  border-radius: .25rem
+  text-decoration: none
+  font-weight: 700
+  color: #CC3700
+  text-align: center
+  -webkit-box-shadow: inset 0 0 0 2px #CC3700
+  box-shadow: inset 0 0 0 2px #f40
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
@@ -93,7 +192,6 @@ $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
 
-
 .menu-label
   font-size: 1em !important
   text-align: left
@@ -103,38 +201,36 @@ $menu-label-color: $white-ter
 .social
   padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
-
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
