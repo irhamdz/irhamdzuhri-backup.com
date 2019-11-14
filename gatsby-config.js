@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Irham Dzuhri : Software Engineer',
+    title: 'Irham Dzuhri - Software Engineer',
     description:
       'Irham Dzuhri\'s Personal Website ',
   },
