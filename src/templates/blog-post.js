@@ -24,9 +24,9 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <p className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
-            </h1>
+            </p>
             <p class="subtitle is-6">{date} &bull; {timeToRead} min read</p>
             <p>{description}</p>
             <PostContent content={content} />
@@ -35,7 +35,7 @@ export const BlogPostTemplate = ({
                 <h4>Tags</h4>
                 <div class="tags">
                   {tags.map(tag => (
-                    <span class="tag is-black" key={tag + `tag`}>
+                    <span class="tag" key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </span>
                   ))}

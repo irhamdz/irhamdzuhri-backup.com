@@ -1,10 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import Layout from "../components/Layout";
+import Features from "../components/Features";
+import BlogRoll from "../components/BlogRoll";
+// import profile_pic from "../../static/img/profile-pic.png";
 
 export const IndexPageTemplate = ({
   image,
@@ -13,7 +14,7 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
-  intro,
+  intro
 }) => (
   <div>
     {/* <div
@@ -64,9 +65,36 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div> */}
-    <section className="section section--gradient">
+    <header>
       <div className="container">
-        <div className="section">
+        <div className="profile-image">
+          <figure class="image is-150x150">
+            <img
+              class="is-rounded"
+              src={
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              }
+              alt="profile-pic"
+            ></img>
+          </figure>
+        </div>
+        <div className="intro">
+          <div className="name">Hello , I'm Irham</div>
+          <p className="subtitle">
+            A software engineer from Indonesia who talk Java, Python,
+            Javascript, PHP, and love to implement DRY and clean code.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div className="quote-div">
+      <hr></hr>
+    </div>
+    <section className="section-index section--gradient">
+      <div className="container">
+        <div className="section-index">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
@@ -112,7 +140,7 @@ export const IndexPageTemplate = ({
       </div>
     </section>
   </div>
-)
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -122,12 +150,12 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-}
+    blurbs: PropTypes.array
+  })
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -141,18 +169,18 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+      frontmatter: PropTypes.object
+    })
+  })
+};
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -161,7 +189,7 @@ export const pageQuery = graphql`
         title
         image {
           childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -190,4 +218,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
