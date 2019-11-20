@@ -73,7 +73,7 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $body-family: 'Roboto', sans-serif
 $black: #2b2523
-
+$dimensions: 16 24 32 48 64 96 128 150
 // navbar
 
 .navbar .navbar-menu
@@ -106,10 +106,71 @@ nav .container
   padding: 0 50px;  
 
 nav .container a
-    transition: 0.3s all 0s ease
-    &:hover
-      opacity: 0.7;
+  transition: 0.3s all 0s ease
+  &:hover
+    opacity: 0.7;
+
+// header
+header .container 
+  max-width: 1200px
+  margin: 50px auto 0
+  display: table
+  padding: 0 50px
+  width: 100%
   
+  .profile-image
+    display: table-cell
+    width: 20%
+    vertical-align: middle
+  
+  .intro
+    display: table-cell
+    width: 80%
+    vertical-align: middle
+
+header .profile-image img
+    float: left
+    border-radius: 50%
+
+.image-responsive
+    display: block
+    max-width: 100%
+    height: auto
+
+.intro .name
+    font-family: 'Brandon Grotesque';
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: #234ef3;
+
+p.subtitle
+    line-height: 26px;
+
+// quote div
+.quote-div
+  display: block
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 50px  
+
+  hr
+  margin-bottom: 30px;
+
+hr
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+
+// section-index
+section.section-index
+  padding: 0 1.5rem 3rem;
+
+  .container .section-index
+    padding: 0 1.5rem 3rem;
+// img
+//   border: 0  
+//   vertical-align: middle
 
 //
 .content .taglist
@@ -177,11 +238,27 @@ nav .container a
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+
 footer.footer
-  padding: 3rem 0rem 0rem
+  padding: 3rem 0rem 3rem
+  border-top: 1px solid #eee;
   background-color: transparent
+
+footer .content::after
+    content: ''
+    border-bottom: 2px solid black
+    width: 10vw
+    margin: 20px auto
+    display: block
+
+footer .logo-list
+
+  img
+    margin: 0 10px
+    width: 40px
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -212,13 +289,19 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033
+  background-color: lightcyan
 .blog-list-item header
   display: flex
   margin-bottom: 1em
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
+
+a.has-text-black
+  text-decoration: none
+  &:hover
+    opacity: 0.7
+
 
 @import "~bulma"
 
