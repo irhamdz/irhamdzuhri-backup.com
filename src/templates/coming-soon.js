@@ -6,7 +6,7 @@ export const ComingSoonPageTemplate = () => {
   return (
     <section className="countdown-section">
       <CountDown
-        timeTillDate="01 01 2020, 6:00 am"
+        timeTillDate="12 25 2019, 6:00 am"
         timeFormat="MM DD YYYY, h:mm a"
       />
     </section>
