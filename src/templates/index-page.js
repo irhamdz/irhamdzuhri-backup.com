@@ -16,8 +16,8 @@ export const IndexPageTemplate = ({
   description,
   intro
 }) => (
-  <div>
-    {/* <div
+    <div>
+      {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -65,82 +65,86 @@ export const IndexPageTemplate = ({
         </h3>
       </div>
     </div> */}
-    <header>
-      <div className="container">
-        <div className="profile-image">
-          <figure class="image is-150x150">
-            <img
-              class="is-rounded"
-              src={
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
-              }
-              alt="profile-pic"
-            ></img>
-          </figure>
-        </div>
-        <div className="intro">
-          <div className="name">Hello , I'm Irham</div>
-          <p className="subtitle">
-            A software engineer from Indonesia who talk Java, Python,
-            Javascript, PHP, and love to implement DRY and clean code.
+      <header>
+        <div className="container">
+          <div className="profile-image">
+            <figure class="image is-150x150">
+              <img
+                class="is-rounded"
+                src={
+                  !!image.childImageSharp
+                    ? image.childImageSharp.fluid.src
+                    : image
+                }
+                alt="profile-pic"
+              ></img>
+            </figure>
+          </div>
+          <div className="intro">
+            <div className="name">Hello , I'm Irham</div>
+            <p className="subtitle">
+              A software engineer from Indonesia who talk Java, Python,
+              Javascript, PHP, and love to implement DRY and clean code.
           </p>
+          </div>
         </div>
+      </header>
+      <div className="quote-div">
+        <hr></hr>
       </div>
-    </header>
-    <div className="quote-div">
-      <hr></hr>
-    </div>
-    <section className="section-index section--gradient">
-      <div className="container">
-        <div className="section-index">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
+      <section className="section-index section--gradient">
+        <div className="container">
+          <div className="section-index">
+            <div className="columns">
+              <div className="column is-10 is-offset-1">
                 <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                  <div className="content">
+                    <blockquote class="groucho">
+                    Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+                    <footer>Martin Fowler</footer>
+                    </blockquote>
+                    {/* <div className="tile">
+                      <h1 className="title">{mainpitch.title}</h1>
+                    </div>
+                    <div className="tile">
+                      <h3 className="subtitle">{mainpitch.description}</h3>
+                    </div> */}
                   </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                  <div className="columns">
+                    <div className="column is-12">
+                      <h3 className="has-text-weight-semibold is-size-2">
+                        {heading}
+                      </h3>
+                      <p>{description}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="columns">
+                  <Features gridItems={intro.blurbs} />
+                  <div className="columns">
+                    <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/products">
+                        See all products
+                    </Link>
+                    </div>
+                  </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                      Latest stories
                   </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
+                    <BlogRoll />
+                    <div className="column is-12 has-text-centered">
+                      <Link className="btn" to="/blog">
+                        Read more
                     </Link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-);
+      </section>
+    </div>
+  );
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),

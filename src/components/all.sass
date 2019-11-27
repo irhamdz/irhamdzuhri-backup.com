@@ -74,6 +74,7 @@ $body-color: #333
 $body-family: 'Roboto', sans-serif
 $black: #2b2523
 $dimensions: 16 24 32 48 64 96 128 150
+$content-blockquote-background-color: transparent
 // navbar
 
 .navbar .navbar-menu
@@ -162,6 +163,34 @@ hr
   border: 0
   border-top: 1px solid #eee
 
+// quotation
+.groucho 
+  position: relative
+  font-family: 'Roboto', sans-serif
+  font-size: 1.25rem
+  line-height: 1.5em
+  
+  footer 
+    font-family: 'Noto Sans', sans-serif
+    font-size: 1em
+    font-weight: 700
+    color: darken($white, 15%)
+    float: right
+    
+    &:before 
+      content: '\2015'  
+    
+  &:after 
+      content: '\201D'
+      position: absolute
+      top: 0.28em
+      right: 0
+      font-size: 6em
+      font-style: italic
+      color: darken($white, 7%)
+      z-index: -1  
+
+
 // section-index
 section.section-index
   padding: 0 1.5rem 3rem
@@ -205,11 +234,11 @@ section.section-index
   .text
     background-color: white
     color: black
-    font-size: 5vw 
+    font-size: 3vw 
     font-weight: bold
     margin: 0 auto
-    padding: 10px
-    width: 50%
+    padding: 15px
+    // width: 50%
     text-align: center
     position: absolute
     top: 50%
