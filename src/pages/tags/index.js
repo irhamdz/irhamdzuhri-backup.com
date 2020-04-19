@@ -1,5 +1,5 @@
 import React from 'react'
-import { kebabCase } from 'lodash'
+import {kebabCase, upperCase} from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
@@ -13,7 +13,7 @@ const TagsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
+    <section className="section main-contain">
       <Helmet title={`Tags | ${title}`} />
       <div className="container content">
         <div className="columns">
@@ -22,15 +22,15 @@ const TagsPage = ({
             style={{ marginBottom: '6rem' }}
           >
             <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <div className="tags">
               {group.map(tag => (
-                <li key={tag.fieldValue}>
+                <span className="tag" key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
+                    {upperCase(tag.fieldValue)} ({tag.totalCount})
                   </Link>
-                </li>
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
