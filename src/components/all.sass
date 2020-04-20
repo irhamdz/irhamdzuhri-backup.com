@@ -203,7 +203,8 @@ section.section-index
 //   vertical-align: middle
 
 .main-contain
-  min-height: 70vh /* will cover the 100% of viewport */
+  min-height: 70vh
+  /* will cover the 100% of viewport */
   overflow: hidden
   display: block
   position: relative
@@ -459,3 +460,70 @@ a.has-text-black
     max-width: 1200px
     margin: 0 auto
     padding: 0 10px
+
+  // header
+  header .container
+    max-width: 1200px
+    margin: 50px auto 0
+    display: table
+    padding: 0 30px
+    width: 100%
+
+    .profile-image
+      display: none
+      width: 100%
+      vertical-align: middle
+
+    .intro
+      display: block
+      width: 100%
+      text-align: center
+
+  // quote div
+  .quote-div
+    display: block
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 30px
+
+    hr
+    margin-bottom: 30px
+
+  hr
+    margin-top: 20px
+    margin-bottom: 20px
+    border: 0
+    border-top: 1px solid #eee
+
+  // quotation
+  .groucho
+    position: relative
+    font-family: 'Roboto', sans-serif
+    font-size: 1.25rem
+    line-height: 1.5em
+
+    footer
+      font-family: 'Noto Sans', sans-serif
+      font-size: 1em
+      font-weight: 700
+      color: darken($white, 15%)
+      float: right
+
+      &:before
+        content: '\2015'
+
+    &:after
+      content: '\201D'
+      position: absolute
+      top: 0.28em
+      right: 0
+      font-size: 6em
+      font-style: italic
+      color: darken($white, 7%)
+      z-index: -1
+
+  section.section-index .container .section-index
+    padding: 0
+
+  footer.footer
+    padding: 3rem 1rem 3rem
