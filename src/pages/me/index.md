@@ -1,20 +1,35 @@
 ---
 [//]: # TODO: change template key to 'me'
-templateKey: 'coming-soon'
+templateKey: 'about-page'
 path: /me
-title: About our values
+title: About Me?
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Background
+I was born in bekasi, Indonesia. always curious as sh*t about everything i dont know, and loves to try a new things, especially in programming things.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### Portfolio 
+A few sites I created and designed.
+- [GPAN Website](http://gpan.or.id/) : 2016
+   
+   GPAN website is a website that contains all about GPAN like last activities, last event, and many more.  
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+- [Aspiration System of State Islamic University Sunan Kalijaga Yogyakarta](http://aspirasi.uin-suka.ac.id/) : 2017
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+   Aspiration System UIN Suka is an online aspiration system that handles aspiration from public peoples or from UIN peoples itself.
+   
+- [English Cafe](https://englishcafecourse.net/) : 2017
+- [Naughty Nuris Headquarters](http://naughtynuris.com/) : 2017
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+### My War Equipment
+- OS: Ubuntu Linux 18.04 LTS.
+- IDE: Pycharm pro (Back-End), Webstorm (Front-End).
+- Notes: [Google Keep][1]
+
+### Spotify Playlist
+Developers nowadays need to listen to music for better focus, so I created some playlist in Spotify, here's my recommended playlist:
+- Coding: [My custom playlist created by me][2]
+- Chill: [Lofi hip hop][3]
+
+[1]: https://keep.google.com/
+[2]: https://open.spotify.com/playlist/75Y6jp8UPjsurT7BgNC4P9?si=VEhEtjaMRLaAIFdqGYm7og
+[3]: https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM?si=DGBbCjuESUyAU2oXIDAqaQ

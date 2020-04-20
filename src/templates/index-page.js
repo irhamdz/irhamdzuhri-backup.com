@@ -125,7 +125,7 @@ export const IndexPageTemplate = ({image, title, heading, subheading, mainpitch,
                                     </h3>
                                     <BlogRoll/>
                                     <div className="column is-12 has-text-centered">
-                                        <Link className="btn" to="/blog">
+                                        <Link className="button is-link is-outlined" to="/blog">
                                             Read more
                                         </Link>
                                     </div>
