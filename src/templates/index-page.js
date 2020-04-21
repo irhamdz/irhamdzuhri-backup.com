@@ -76,7 +76,12 @@ export const IndexPageTemplate = ({image, title, heading, subheading, mainpitch,
                     <div className="name">Hello , I'm Irham</div>
                     <p className="subtitle">
                         A professional software engineer from Indonesia who talk Java, Python,
-                        Javascript, PHP, and love to implement DRY and clean code.
+                        Javascript, PHP, and love to implement <a
+                        href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank"
+                        rel="noopener noreferrer">DRY</a> and <a
+                        href="https://www.oreilly.com/library/view/clean-code/9780136083238/" target="_blank"
+                        rel="noopener noreferrer">Clean
+                        Code</a> method.
                     </p>
                 </div>
             </div>

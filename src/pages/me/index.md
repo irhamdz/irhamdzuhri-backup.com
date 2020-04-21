@@ -5,24 +5,24 @@ path: /me
 title: About Me?
 ---
 ### Background
-I was born in bekasi, Indonesia. always curious as sh*t about everything i dont know, and loves to try a new things, especially in programming things.
+I was born in Bekasi, Indonesia. always curious as sh*t about everything I don't know, and loves to try new things, especially in programming things. twenty five years later (still counting) I become a professional back end developer who falls in love with the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and [Clean Code](https://www.oreilly.com/library/view/clean-code/9780136083238/) method.
 
 ### Portfolio 
 A few sites I created and designed.
-- [GPAN Website](http://gpan.or.id/) : 2016
-   
-   GPAN website is a website that contains all about GPAN like last activities, last event, and many more.  
+- [GPAN Website](http://gpan.or.id/) : 2016 <br>
+   *GPAN website is a website that contains all about GPAN like last activities, last event, and many more.*
 
-- [Aspiration System of State Islamic University Sunan Kalijaga Yogyakarta](http://aspirasi.uin-suka.ac.id/) : 2017
-
-   Aspiration System UIN Suka is an online aspiration system that handles aspiration from public peoples or from UIN peoples itself.
+- [Aspiration System of State Islamic University Sunan Kalijaga Yogyakarta](http://aspirasi.uin-suka.ac.id/) : 2017<br>
+   *Aspiration System UIN Suka is an online aspiration system that handles aspiration from public peoples or from UIN peoples itself.*
    
-- [English Cafe](https://englishcafecourse.net/) : 2017
-- [Naughty Nuris Headquarters](http://naughtynuris.com/) : 2017
+- [English Cafe](https://englishcafecourse.net/) : 2017 <br>
+    *Portfolio website for providing information about English Cafe.*
+- [Naughty Nuris Headquarters](http://naughtynuris.com/) : 2017 <br>
+    *Portfolio website for providing information about naughty nuris’s restaurant over the worlds.*
 
 ### My War Equipment
 - OS: Ubuntu Linux 18.04 LTS.
-- IDE: Pycharm pro (Back-End), Webstorm (Front-End).
+- IDE: [Pycharm pro](https://www.jetbrains.com/) (Back-End), [Webstorm](https://www.jetbrains.com/) (Front-End).
 - Notes: [Google Keep][1]
 
 ### Spotify Playlist
